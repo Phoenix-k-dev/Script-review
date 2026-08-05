@@ -1,14 +1,17 @@
 # Script-review
 
-Build web minifié (auto-généré) de l'app **Script**, pour prévisualisation
-rapide de l'écran d'accueil. Le code source réel vit dans le dépôt privé
-`Scipt` (nom de dépôt hérité d'une coquille, le produit s'appelle Script) —
-ce dépôt ne contient que la sortie de build, pas de logique.
+Build web minifié (auto-généré) de l'app **Script** — cette fois, la vraie
+version web interactive (`apps/web`), pas juste un écran d'accueil. Le code
+source réel vit dans le dépôt privé `Scipt` (nom de dépôt hérité d'une
+coquille, le produit s'appelle Script) — ce dépôt ne contient que la sortie
+de build, pas de logique.
 
-**Important** : les boutons "Nouveau projet" / "Ouvrir un projet" ne
-fonctionneront pas dans un navigateur classique. Ils dépendent des API
-Tauri (choix de dossier, lecture/écriture de fichiers, SQLite) qui n'existent
-que dans l'app installée (desktop). Ce build web sert uniquement d'aperçu
-visuel de l'écran d'accueil, pas de l'app fonctionnelle complète.
+**Ce qui fonctionne** : créer un projet, écrire un scénario (Fountain,
+autocomplétion, verrouillage de numéros de scène, export PDF), ajouter des
+panneaux de storyboard avec upload d'image. Les projets sont stockés dans ce
+navigateur (SQLite en WebAssembly + IndexedDB) — **pas dans un vrai fichier**.
+Vider le cache/les données du site efface les projets. Ceci sert à essayer
+l'app et donner un aperçu, pas à y stocker du vrai travail — utilise l'app
+installée (desktop, Tauri) pour ça.
 
-Régénéré via `pnpm --filter @scipt/desktop build` dans le dépôt `Scipt`.
+Régénéré via `pnpm --filter @scipt/web build` dans le dépôt `Scipt`.
