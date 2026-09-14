@@ -18,7 +18,7 @@ Régénéré via `pnpm --filter @scipt/web build` dans le dépôt `Scipt`.
 
 ## Mise à jour du 13 septembre 2026
 
-Source : commit `8459603607002cfb722fa81d8fe72b6d0189fd43` du dépôt privé `Scipt`.
+Source : commit `a25114b0a2e06a98f0b3c05d9461c3727bafad4b` du dépôt privé `Scipt`.
 
 - Scénario > Texte : bouton « Ajouter une page » et raccourci Ctrl+Entrée (Cmd+Entrée sur Mac).
 - Flèches précédente/suivante et compteur de pages, défilement continu conservé.
@@ -29,6 +29,7 @@ Source : commit `8459603607002cfb722fa81d8fe72b6d0189fd43` du dépôt privé `Sc
 - Le budget conserve ses valeurs numériques, ses formules et ses totaux séparés par devise.
 - Libellé « Exporter le storyboard » clarifié.
 - Contraste des cartes de planning corrigé dans le thème sombre.
+- Dans le budget, le planning et le découpage, un unique bouton « Exporter » ouvre un choix PDF, Excel, Google Sheets et, pour le budget, CSV.
 
 Le JavaScript et le CSS de l'application sont compilés et minifiés. Les sources TypeScript/React et les source maps ne sont pas publiées ici. La minification réduit la taille du code, elle ne constitue pas un chiffrement du JavaScript exécuté par le navigateur.
 
