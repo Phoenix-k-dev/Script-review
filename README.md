@@ -18,12 +18,17 @@ Régénéré via `pnpm --filter @scipt/web build` dans le dépôt `Scipt`.
 
 ## Mise à jour du 13 septembre 2026
 
-Source : commit `7192feee12692f6f2c4dc7ce37a0fea05d817fe9` du dépôt privé `Scipt`.
+Source : commit `8459603607002cfb722fa81d8fe72b6d0189fd43` du dépôt privé `Scipt`.
 
 - Scénario > Texte : bouton « Ajouter une page » et raccourci Ctrl+Entrée (Cmd+Entrée sur Mac).
 - Flèches précédente/suivante et compteur de pages, défilement continu conservé.
 - Sauts de page volontaires conservés dans la sauvegarde et pris en compte dans le PDF.
 - Bouton « Soutenir » avec cœur après le sélecteur de thème dans la barre du projet, également présent sous la liste des projets : contribution Stripe ponctuelle à montant libre.
+- Export scénario au choix : scénario, synopsis, note d'intention, personnages et statistiques, réunis dans un PDF ou séparés dans un ZIP.
+- Exports Excel propres et modifiables pour le découpage, le planning et le budget ; les mêmes fichiers peuvent être importés dans Google Sheets sans connexion à Script.
+- Le budget conserve ses valeurs numériques, ses formules et ses totaux séparés par devise.
+- Libellé « Exporter le storyboard » clarifié.
+- Contraste des cartes de planning corrigé dans le thème sombre.
 
 Le JavaScript et le CSS de l'application sont compilés et minifiés. Les sources TypeScript/React et les source maps ne sont pas publiées ici. La minification réduit la taille du code, elle ne constitue pas un chiffrement du JavaScript exécuté par le navigateur.
 
