@@ -16,6 +16,14 @@ installée (desktop, Tauri) pour ça.
 
 Régénéré via `pnpm --filter @scipt/web build` dans le dépôt `Scipt`.
 
+## Mise à jour du 14 septembre 2026
+
+Source : dépôt privé `Scipt`, branche `claude/celtx-fyw3sq` (commit non renseigné —
+archive reçue sans historique Git ; à compléter lors du prochain commit).
+
+- L'option « Google Sheets » a été retirée du menu d'export (budget, planning, découpage) : il ne reste que PDF, Excel et, pour le budget, CSV. Après un export Excel, une aide explique comment l'ouvrir dans Excel/LibreOffice ou l'importer dans Google Sheets.
+- Correction : cocher plusieurs formats à la fois (ex. PDF + Excel) ne téléchargeait que le premier fichier, le navigateur bloquant le second téléchargement déclenché juste après. Les formats sélectionnés sont désormais regroupés dans une seule archive ZIP.
+
 ## Mise à jour du 13 septembre 2026
 
 Source : commit `a25114b0a2e06a98f0b3c05d9461c3727bafad4b` du dépôt privé `Scipt`.
