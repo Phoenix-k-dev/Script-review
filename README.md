@@ -16,6 +16,25 @@ installée (desktop, Tauri) pour ça.
 
 Régénéré via `pnpm --filter @scipt/web build` dans le dépôt `Scipt`.
 
+## Mise à jour du 14 septembre 2026 (soir, 2) — raccourcis clavier de l'éditeur
+
+- Ajout de 6 raccourcis clavier dans l'éditeur de scénario, un par type de ligne (Scène, Action, Personnage, Dialogue, Parenthèse, Transition) : `Alt+Shift+1` à `Alt+Shift+6`, dans l'ordre des boutons de la barre d'outils. Les boutons existants restent inchangés — le raccourci s'ajoute, il ne les remplace pas. Visibles dans l'aide (`?`) et en survol de chaque bouton.
+
+## Mise à jour du 14 septembre 2026 (soir) — traduction FR/EN
+
+Source : dépôt privé `Scipt`, branche `claude/celtx-fyw3sq` (commit non renseigné —
+archive reçue sans historique Git).
+
+- Ajout d'un sélecteur de langue Français/Anglais (bouton "FR"/"EN" à côté du
+  thème sombre/clair, sur la page projets et dans la barre du haut une fois
+  un projet ouvert). Choix mémorisé pour les prochaines visites.
+- Toute l'interface est traduite : page projets, onglets, Scénario
+  (personnages, synopsis, note d'intention, statistiques), Storyboard,
+  Découpage, Planning (disponibilités, feuilles de service), Budget, menus
+  d'export, raccourcis clavier, historique annuler/rétablir.
+- Nouveau package interne `@scipt/i18n` (dictionnaire FR/EN vérifié par
+  TypeScript — impossible de compiler s'il manque une traduction).
+
 ## Mise à jour du 14 septembre 2026
 
 Source : dépôt privé `Scipt`, branche `claude/celtx-fyw3sq` (commit non renseigné —
